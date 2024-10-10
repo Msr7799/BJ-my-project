@@ -1,0 +1,253 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('assets/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #f1f1f1;
+    text-align: center;
+    margin-right: 10vh;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+h1 {
+    font-family: '';
+    font-size: 100px;
+    margin: 70px;
+    color: #ffbe3b;
+    background-color: #414348;
+    box-shadow: 442px rgba(32, 32, 23, 2.5);
+    box-sizing: border-box;
+    border-radius: 22px;
+    padding: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 35px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    overflow: fixed;
+    height: 66vh;
+    width: 100%;
+}
+
+.table-area {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    flex-direction: row;
+    width: 900rem;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin: 1400px 800px;
+}
+
+.dealer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-clip:border-box;
+    border: 20px solid #ccc; margin-right: 39px;
+    border-radius: 22px;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px;
+    padding: 90px;
+    border-radius: 22px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+}
+.player-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-clip:border-box;
+    border: 20px solid #ccc;
+    margin-right: 39px;
+    border-radius: 22px;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px;
+    padding: 90px;
+    border-radius: 22px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+}
+#player-score , #dealer-score {
+    font-size: 30px;
+    background-color: #030303;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #fffcf4;
+    font-size:70px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+h2 {
+    color: #ffa502;
+    font-size: 5em;
+}
+
+.card {
+    width: 260px;
+    /*زيادةالعرض*/height:300px;
+    /*زيادةالارتفاع*/margin:80px;
+    font-size: 70px;
+    /*زيادةحجمالخط*/display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(121, 44, 44);
+    border: 2px solid black;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* للسماح بالتفاف البطاقات إذا كان هناك الكثير منها */
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    position: relative;
+    perspective: 1000px;
+}
+.card-back {
+    background-image: url('./assets/card-back.png');
+    background-size: cover;
+}
+.card .card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    -webkit-transition: transform 0.6s;
+    -moz-transition: transform 0.6s;
+    -ms-transition: transform 0.6s;
+    -o-transition: transform 0.6s;
+}
+
+.card.flip .card-inner {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(180deg);
+}
+
+.card .card-front, .card .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+}
+
+#splitbt {
+    padding: 10px 20px;
+    margin: 30px;
+    font-size: 500px;
+    background-color: #0a0909;
+    color: #ccbbbb;
+    border: none;
+    border-radius: 22x;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+    background-color: #e55039;
+}
+
+
+
+.card .card-front {
+    transform: rotateY(180deg);
+    -webkit-transforpm: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.card .card-back {
+    background-image: url('./assets/card-back.png');
+    background-size: cover;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 30px;
+    font-size: 90px;
+    background-color: #a74e5b;
+    color: #fff;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+
+    background-color: #e55039;
+}
+
+#game-message {
+    padding-right: 70px;
+    margin-top: 0px;
+    font-size: 90px;
+    color: #ff6b81;
+}
