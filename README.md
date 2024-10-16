@@ -1,5 +1,4 @@
-![GameScreenshot](/assets/Screenshot2024.PNG)
-
+![GameScreenshot](https://ibb.co/b31f4Qs)
 
 # Game Title
 Put a brief description of your game here
