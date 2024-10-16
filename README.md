@@ -1,5 +1,4 @@
-![GameScreenshot]()
-
+![GameScreenshot](/assets/Screenshot2024.PNG)
 
 
 # Game Title
