@@ -1,5 +1,5 @@
 ![GameScreenshot](https://ibb.co/b31f4Qs)
-
+<a href="https://ibb.co/b31f4Qs"><img src="https://i.ibb.co/MhnXzZc/Screenshot-2024-10-16-130544.png" alt="Screenshot-2024-10-16-130544" border="0" /></a>
 # Game Title
 Put a brief description of your game here
 Blackjack Game
